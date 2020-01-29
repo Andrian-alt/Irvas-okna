@@ -20,16 +20,12 @@ body
             line-height: 26px
             margin: 0
             margin-bottom: 40px
-            
         &-subtitle
             text-transform: uppercase
-            font-size: 24px
-            
+            font-size: 24px 
         &-minitext
         font-size: 11px
         font-weight: 300
-       
-
         color: #666666
         margin: 0            
 
@@ -85,11 +81,12 @@ body
 @media screen and ( max-width: 768px  )
     .head-title
         &::before
-            left: 33%
+            display: none
 @media screen and ( max-width: 550px  )
-    .head-title
-        &::before
-            left: 30%
+    .block
+        &-form
+            height: auto
+    
 
         
         

@@ -1,0 +1,39 @@
+.payment
+    padding-bottom: 58px
+    &-title
+        text-align: center
+        font-size: 30px
+        font-weight: 700 
+
+        margin: 0
+        margin-top: 80px
+    &-row
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+        margin-top: 85px
+        
+    &-group
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+        
+    &__text
+        font-size: 20px
+        padding-left: 30px
+@media screen and ( max-width: 1024px  )
+    .payment
+        &-row
+            justify-content: space-around
+@media screen and ( max-width: 768px  )
+    .payment
+        &-row
+            justify-content: space-around
+            text-align: center
+            
+        &-group
+            display: block
+
+        
+    

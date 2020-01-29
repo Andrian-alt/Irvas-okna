@@ -90,8 +90,8 @@
                         </h3>
                         
                        <form action="" class="form">
-                        <input type="text" placeholder="Введите ваше имя" class="form-input" >
-                        <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" pattern="+7 ___-___-__-__" class="form-input" >
+                        <input type="text" name="name" placeholder="Введите ваше имя" class="form-input" >
+                        <input type="text" name="phone" placeholder="+7 (___) ___-__-__" class="form-input" >
                         <input type="submit" class="form-btn btn" value="Вызвать замерщика!" >
                        </form>
                        <p class="block-form-minitext">Ваши данные конфиденциальны</p>
@@ -107,31 +107,37 @@
                 <h2 class="head-title">Остекление балконов и лоджий</h2>
                 <div class="balcony-type">
                     <div class="balcony-group">
-                        <div class="balcony-image"><img src="img/price/1.png" alt="" class="balcony__image"></div>
-                        <a href="#" class="balcony-text balcony-text-active ">Деревянное
-                            остекление</a>
+                        <a class="balcony-link" href="#">
+                            <img src="img/price/1.png" alt="" class="balcony__image">
+                            <p href="#" class="balcony-text ">Деревянное
+                                остекление</p>
+                        </a>
+                        
                     </div>
                     <div class="balcony-group">
+                    <a href="" class="balcony-link">
                         <img src="img/price/2.png" alt="" class="balcony__image">
-                        <a href="" class="balcony-text">Алюминиевое
-                            остекление</a>
+                        <p href="" class="balcony-text">Алюминиевое
+                            остекление</p>
+                    </a>    
                     </div>
                     <div class="balcony-group">
-                        <img src="img/price/3.png" alt="" class="balcony__image">
-                        <a href="#" class="balcony-text">Остекление
-                            пластиковыми
-                            рамами</a>
+                        <a href="#" class="balcony-link">
+                            <img src="img/price/3.png" alt="" class="balcony__image">
+                            <p href="#" class="balcony-text">Остекление пластиковыми рамами</p>
+                        </a>
                     </div>
                     <div class="balcony-group">
-                        <img src="img/price/4.png" alt="" class="balcony__image">
-                        <a href="#" class="balcony-text">Французское
-                            остекление
-                            (панорамное)</a>
+                        <a href="#" class="balcony-link">
+                            <img src="img/price/4.png" alt="" class="balcony__image">
+                            <p href="#" class="balcony-text">Французское  остекление   (панорамное)</p>
+                         </a>
                     </div>
                     <div class="balcony-group">
-                        <img src="img/price/5.png" alt="" class="balcony__image">
-                        <a href="#" class="balcony-text">Остекление
-                            с выносом</a>
+                        <a href="#" class="balcony-link">
+                            <img src="img/price/5.png" alt="" class="balcony__image">
+                        <p href="#" class="balcony-text">Остеклениес выносом</p>
+                        </a>
                         </div>
                 </div>
                 
@@ -249,7 +255,7 @@
         </section>
         <section class="payment">
             <div class="container">
-                <h2 class="head-title">Вы можете оплатить наши услуги:       </h2>
+                <h2 class="payment-title">Вы можете оплатить наши услуги:   </h2>
                 <div class="payment-row">
                     <div class="payment-group">
                         <img src="img/payment/1.png" alt="" class="payment__image">
@@ -266,6 +272,75 @@
                 </div>
             </div>
         </section>
-    </main>    
+        <section class="sale">
+            <div class="container">
+                <div class="sale-wrap">
+                    <div class="sale-economy">
+                        <h2 class="sale-title">Акция - 60%</h2>
+                        <p class="sale-subtitle">Успей сэкономить на остеклении! <br>
+                            Только до 23 апреля! </p>
+                        <div class="sale-count"></div>
+                    </div>
+                    <div class="block-form hero__form">
+                        <h3 class="block-form-title">Запишитесь сегодня на <br> <span class="block-form-subtitle">бесплатный замер</span> 
+                        </h3>
+                        
+                       <form action="" class="form">
+                        <input type="text" placeholder="Введите ваше имя" class="form-input" >
+                        <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" class="form-input" >
+                        <input type="submit" class="form-btn btn" value="Вызвать замерщика!" >
+                       </form>
+                       <p class="block-form-minitext">Ваши данные конфиденциальны</p>
+                    </div>
+                </div>
+            </div>
+       
+        </section>
+        <section class="navigation">
+            <div class="container">
+                <h2 class="head-title">Как нас найти               </h2>
+                <div class="navigation-wrap"><div class="map" id="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab91bc02e24b576a0f3cc9b35e8a008621241959fa98d7a73bae4983aa7268837&amp;source=constructor" width="570" height="470" frameborder="0"></iframe>
+                </div>
+                <div class="navigation-info">
+                    <p class="navigation-title">Юридический адрес:</p>
+                    <p class="navigation-subtitle">ООО «ИРВАС», 127411, г.Москва, Дмитровское <br>
+                        шоссе, д.125, корпус 1</p>
+                    <p class="navigation-title">Фактический адрес:</p>
+                    <p class="navigation-subtitle">ООО «ИРВАС», 141031, МО, Мытищинский р-он, <br>
+                        п.Вешки,Выставочная,д.53</p>
+                    <p class="navigation-title">Телефон:</p>
+                    <p class="navigation-subtitle">+7 (495) 646-61- 71 (многоканальный)</p>
+                    <p class="navigation-title">E-mail:</p>
+                    <a class="navigation-subtitle">info@irvasokna.ru</a>
+                    <p class="navigation-title">Режим работы:</p>
+                    <p class="navigation-subtitle">9:00 - 18:00 без выходных</p>
+                </div>
+            </div>    
+            </div>
+            <div class="question">
+                <div class="container">
+                    <div class="question-title">
+                        <span class="question-text">Остались вопросы? </span>
+                        <a href="#" class="question-link">Спросите у нашего специалиста!</a>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>  
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <p class="footer-text">2017 © Ирвас окна <br> Работаем без выходных</p> 
+                <img src="img/navbar/logo.png" alt="logo" class="footer-logo">
+                <div class="footer-phone">
+                    <p class="footer-number">+7 (495) 646-61-71</p>
+                    <a href="" class="footer-link">info@irvasokna.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -94,13 +94,13 @@ body img {
 
 @media screen and (max-width: 768px) {
   .head-title::before {
-    left: 33%;
+    display: none;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .head-title::before {
-    left: 30%;
+  .block-form {
+    height: auto;
   }
 }
 
@@ -335,13 +335,17 @@ body img {
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    padding: 20px;
+    background: #eeeef2;
+  }
   .hero-group {
     margin: 10px;
   }
 }
 
 .price {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .balcony-type {
@@ -359,13 +363,17 @@ body img {
 .balcony-text {
   display: block;
   max-width: 150px;
-  color: #249ae6;
   font-size: 18px;
   font-weight: 400;
   margin: 40px 0;
 }
 
-.balcony-text:active {
+.balcony-link {
+  color: #249ae6;
+}
+
+.balcony-link:hover {
+  cursor: pointer;
   text-decoration: none;
   color: #000000;
 }
@@ -508,6 +516,10 @@ body img {
   }
 }
 
+.works {
+  padding-bottom: 80px;
+}
+
 .works-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +574,7 @@ body img {
 .guarantee {
   background: #ffffff url("../img/guarantee/guarant-bg.png") no-repeat center;
   background-size: cover;
+  padding-bottom: 80px;
 }
 
 .guarantee-title {
@@ -592,5 +605,201 @@ body img {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 550px) {
+  .guarantee-recomends {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.payment {
+  padding-bottom: 58px;
+}
+
+.payment-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 80px;
+}
+
+.payment-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 85px;
+}
+
+.payment-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.payment__text {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .payment-row {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .payment-row {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+  .payment-group {
+    display: block;
+  }
+}
+
+.sale {
+  background: #fff url("../img/payment/pay-bg.jpg") no-repeat center top;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.sale-title {
+  color: #008cce;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.sale-subtitle {
+  font-size: 20px;
+}
+
+.sale-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .sale {
+    background-position: left;
+  }
+  .sale-wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.navigation-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 110px;
+}
+
+.navigation-info {
+  font-family: "Open Sans - Semibold";
+  margin-left: 120px;
+}
+
+.navigation-title {
+  color: #008cce;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.navigation-subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.question {
+  background: url("../img/guarantee/guarant-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 85px 0px;
+}
+
+.question-title {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.question-link {
+  font-family: "Open Sans - Semibold";
+  margin-left: 60px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    max-width: 100%;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-text {
+  font-size: 15px;
+}
+
+.footer-phone {
+  text-align: right;
+}
+
+.footer-number {
+  font-size: 18px;
+  color: #333333;
+}
+
+.footer-link {
+  color: #0090d5;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-text {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
