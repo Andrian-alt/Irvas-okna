@@ -61,7 +61,6 @@
                             
                         </div>
                         <div class="hero-group">
-                            
                             <div class="hero-group-speed">
                                 <img src="img/hero/2.png" alt="" class="hero-group-image">
                                 </div>
@@ -92,7 +91,7 @@
                         
                        <form action="" class="form">
                         <input type="text" placeholder="Введите ваше имя" class="form-input" >
-                        <input type="text" placeholder="+7 (___) ___-__-__" class="form-input" >
+                        <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" pattern="+7 ___-___-__-__" class="form-input" >
                         <input type="submit" class="form-btn btn" value="Вызвать замерщика!" >
                        </form>
                        <p class="block-form-minitext">Ваши данные конфиденциальны</p>
@@ -103,33 +102,82 @@
     </header>
     <!-- /.header -->
     <main>
-        <div class="section price">
+        <section class=" price">
             <div class="container">
-                <div class="h2-head-title"></div>
+                <h2 class="head-title">Остекление балконов и лоджий</h2>
                 <div class="balcony-type">
                     <div class="balcony-group">
-                        <div class="img balcony__image" src="img/price/1.png"></div>
-                        <p class="balcony__title"></p>
+                        <div class="balcony-image"><img src="img/price/1.png" alt="" class="balcony__image"></div>
+                        <a href="#" class="balcony-text balcony-text-active ">Деревянное
+                            остекление</a>
                     </div>
                     <div class="balcony-group">
-                        <div class="img balcony__image" src="img/price/2.png"></div>
-                        <p class="balcony__title"></p>
+                        <img src="img/price/2.png" alt="" class="balcony__image">
+                        <a href="" class="balcony-text">Алюминиевое
+                            остекление</a>
                     </div>
                     <div class="balcony-group">
-                        <div class="img balcony__image" src="img/price/3.png"></div>
-                        <p class="balcony__title"></p>
+                        <img src="img/price/3.png" alt="" class="balcony__image">
+                        <a href="#" class="balcony-text">Остекление
+                            пластиковыми
+                            рамами</a>
                     </div>
                     <div class="balcony-group">
-                        <div class="img balcony__image" src="img/price/4.png"></div>
-                        <p class="balcony__title"></p>
+                        <img src="img/price/4.png" alt="" class="balcony__image">
+                        <a href="#" class="balcony-text">Французское
+                            остекление
+                            (панорамное)</a>
                     </div>
                     <div class="balcony-group">
-                        <div class="img balcony__image" src="img/price/5.png"></div>
-                        <p class="balcony__title"></p>
+                        <img src="img/price/5.png" alt="" class="balcony__image">
+                        <a href="#" class="balcony-text">Остекление
+                            с выносом</a>
+                        </div>
+                </div>
+                
+                
+                <div class="weather">
+                    <div class="weather-group weather-cold">
+                        <h3 class="weather-heading weather-cold__heading">Холдное</h3>
+                        <div class="weather-image"><img src="img/price/cold.png" alt="cold" class="weather__image"></div>
+                        <ul class="weather-list">
+                            <li class="weather-list__element">Конструктивная толщина 42-58 мм</li>
+                            <li class="weather-list__element">Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+                            <li class="weather-list__element">Теплоизоляция: 0,07 м2 * С/Вт</li>
+                            <li class="weather-list__element">Звукоизоляция: 20-27 дб</li>
+                        </ul>
+                        <div class="cost">
+                            <div class="cost-title">
+                                <p class="cost-text">2600 руб.кв.м.</p>
+                            <span class="cost-subtitle">под ключ с установкой</span>
+                            </div>
+                            <div class="cost-button"><button class="btn cost__btn">Рассчитать стоимость</button></div>   
+                            
+                        </div>
+                    </div>
+                    <div class="weather-group weather-warm">
+                        <h3 class="weather-heading weather-warm__heading">Теплое</h3>
+                        <img src="img/price/warm.png" alt="warm" class="weather__image">
+                        <ul class="weather-list">
+                            <li class="weather-list__element">Конструктивная толщина профиля: 58-78 м</li>
+                            <li class="weather-list__element">Остекление: однокамерные и двухкамерные </li>
+                            <li class="weather-list__element">Теплоизоляция: 0,63 - 1,05 м2 * С/Вт</li>
+                            <li class="weather-list__element">Звукоизоляция: до 5 класса</li>
+                        </ul>
+                        <div class="cost">
+                            <div class="cost-title">
+                                <p class="cost-text">4000 руб.кв.м.</p>
+                            <span class="cost-subtitle">под ключ с установкой</span>
+                            </div>
+                           <div class="cost-button">
+                            <button class="btn cost__btn">Рассчитать стоимость</button>
+                           </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>    
 </body>
 </html>

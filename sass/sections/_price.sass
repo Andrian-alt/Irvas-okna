@@ -1,0 +1,126 @@
+.price
+    padding-bottom: 100px
+.balcony  
+    &-type
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        text-align: center
+
+        margin-top: 110px
+    &-text
+        display: block
+        max-width: 150px
+        color: #249ae6
+        font-size: 18px
+        font-weight: 400
+
+        margin: 40px 0
+        &:active
+            text-decoration: none
+            color: #000000
+.weather
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    
+    &__image, &-list, .cost
+        margin: 30px 60px
+    &-group
+        flex-basis: 50%
+    &-cold
+        border-top: 5px solid  #0d8fe3
+        position: relative
+        &::before
+            content: ''
+            width: 585px
+            height: 689px
+            border-radius: 5px 0 0 5px
+            background-image: linear-gradient(to bottom, #0d8fe3 0%, rgba(255, 255, 255, 0) 100%)
+            opacity: 0.1
+            position: absolute
+        &__heading
+            color: #0d8fe3
+            
+            
+    &-warm
+        border-top: 5px solid #ffb903
+        border-radius: 0 5px 0 0
+        position: relative
+        
+        &::before
+            content: ''
+            width: 585px
+            height: 689px
+            border-radius: 5px 0 0 5px
+            background-image: linear-gradient(to bottom, #ffb903 0%, rgba(255, 185, 3, 0.99) 1%, rgba(255, 255, 255, 0) 100%)
+            opacity: 0.1
+            position: absolute
+        &__heading
+            color: #ffb903
+    &-heading
+        padding-top: 35px
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+    &__image,
+        
+    &-list
+        
+        list-style-image: url('../img/price/list.png')
+        color: #000000
+        font-size: 14px
+        font-weight: 400
+        &__element
+            margin-bottom: 10px
+
+.cost
+    display: flex
+    
+    align-items: center
+    &-title
+        max-width: 160px
+        margin-right: 45px
+    &-text
+        font-size: 20px
+        font-weight: 700
+        margin: 0
+        margin-bottom: 10px
+    &-subtitle
+        width: auto
+        font-size: 14px
+        font-weight: 400
+    &-button
+        max-width: 262px
+        font-size: 19px
+@media screen and ( max-width: 1199px )
+    .weather
+        flex-direction: column
+        justify-content: center
+        &-group
+            margin: auto
+@media screen and ( max-width: 570px )
+    .weather
+        &__image, &-list, .cost
+            margin: auto
+        &-group
+            border: none
+            &::before
+                display: none
+                
+            
+        
+
+
+
+
+            
+           
+     
+
+            
+            
+                  
+            
+
