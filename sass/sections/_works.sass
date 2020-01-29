@@ -1,0 +1,39 @@
+.works
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        margin-top: 110px
+    &-windows
+        flex-basis: 25%
+        max-width: 270px
+        max-height: 270px
+        position: relative
+
+        margin-bottom: 30px
+        &::before
+            content: ''
+            width: 40px
+            height: 40px
+
+            background: url('../img/works/zoom.png') no-repeat center
+            background-size: 100%
+
+            display: block
+            position: absolute
+            top: 40%
+            left: 40%
+
+@media screen and ( max-width: 1199px )
+    .works
+        &-wrap
+            justify-content: space-around
+        &-windows
+            flex-basis: 50%
+@media screen and ( max-width: 570px )
+    .works
+        &-windows
+            flex-basis: 100%
+
+            
